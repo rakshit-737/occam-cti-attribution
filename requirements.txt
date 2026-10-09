@@ -1,6 +1,6 @@
 # Core runtime: Python standard library only.
 # Optional features + dev/test (what CI installs):
-pytest>=9.0.3
+pytest>=9.1.1
 ruff==0.16.10
 scikit-learn>=1.5
 numpy>=1.24
