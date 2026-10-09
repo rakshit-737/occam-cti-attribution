@@ -33,7 +33,7 @@ pdf = ["pypdf>=6.19.0"]
 bench = ["matplotlib>=3.10.9"]
 all = ["occam[ml,graph,stix,api,pdf,bench]"]
 docs = ["mkdocs-material>=9.7.7", "mkdocstrings[python]>=1.0.6", "mkdocs-redirects>=1.2"]
-dev = ["pytest>=9.0.3", "ruff==0.16.10", "build>=1.2", "occam[ml,graph,stix,api]"]
+dev = ["pytest>=9.0.3", "ruff==0.16.10", "build>=1.6.1", "occam[ml,graph,stix,api]"]
 
 [project.scripts]
 occam = "occam.cli:main"
