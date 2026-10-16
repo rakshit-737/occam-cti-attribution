@@ -107,7 +107,7 @@ jobs:
             *) echo "unknown bench $BENCH"; exit 1 ;;
           esac
           ls -la "$R" "$F"
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: bench-${{ matrix.bench }}
           path: out/
@@ -131,7 +131,7 @@ jobs:
           merge-multiple: true
       - name: Diff against the committed results
         run: python scripts/compare_results.py merged/results results | tee -a "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: bench-results
           path: merged/
